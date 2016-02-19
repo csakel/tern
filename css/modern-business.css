@@ -25,6 +25,12 @@ body {
     opacity: 0.8;
 }
 
+/*Custom Navbar*/
+/*
+.navbar-fixed-top {
+    min-height: 100px;
+}*/
+
 /* Home Page Carousel */
 
 /*Added by csak 19.02.2016*/
@@ -32,6 +38,8 @@ body {
 .carousel-caption {
     text-align: left;
 }
+
+/*End*/
 
 header.carousel {
     height: 50%;
