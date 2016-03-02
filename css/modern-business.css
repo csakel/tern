@@ -3,7 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+* {
+  margin: 0px; padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
 
 /* Global Styles */
 
@@ -11,6 +15,8 @@ html,
 body {
     height: 100%;
 }
+
+/*Map ID*/
 
 #map { height: 300px }
 
@@ -67,6 +73,7 @@ body {
 
 /*End*/
 
+
 header.carousel {
     height: 50%;
 }
@@ -112,7 +119,52 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    padding: 20px 20px;
+    width: 100%;
+    height: 250px;
+    color: #ccc;
+    background-color:#31353a;
+    position: relative;
+}
+
+.footer-links {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 17px;
+  padding-top: 17px;
+  text-align:left;
+}
+
+.footer-company-name{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding-top: 40px;
+  text-align:left;
+}
+
+.footer-contact{
+  font-family: 'Open Sans', sans-serif;
+  font-size: auto;
+  padding-top: 20px;
+  text-align:left;
+}
+
+.footer-powered{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding-top: 100px;
+  text-align:left;
+}
+
+.footer-company-about{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  /*padding-top: 10px;*/
+  text-align:left;
+}
+
+.footer-icons {
+  padding-top: 50px;
+  text-align:left;
 }
 
 /* Responsive Styles */
@@ -131,5 +183,8 @@ footer {
 
     header.carousel .carousel {
         height: 70%;
+    }
+    footer{
+    height: 70%;
     }
 }
