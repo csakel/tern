@@ -136,8 +136,9 @@ footer {
 
 .footer-company-name{
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   padding-top: 40px;
+  color: #959595;
   text-align:left;
 }
 
@@ -149,8 +150,8 @@ footer {
 }
 
 .footer-powered{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
   padding-top: 100px;
   text-align:left;
 }
