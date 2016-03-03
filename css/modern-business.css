@@ -1,4 +1,4 @@
-/*!
+§/*!
  * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -41,7 +41,7 @@ body {
 /* Home Page Carousel */
 
 /*Added by csak 19.02.2016*/
-/*Caption left aligned, Fade in transition effect*/
+/*Caption center aligned, Fade in transition effect*/
 
 .carousel-caption {
     text-align: center;
