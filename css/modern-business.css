@@ -44,7 +44,10 @@ body {
 /*Caption left aligned, Fade in transition effect*/
 
 .carousel-caption {
-    text-align: left;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    /*color: #959595;*/
 }
 
 .carousel-fade .carousel-inner .item {
