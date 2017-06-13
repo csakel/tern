@@ -3,11 +3,15 @@
 
 <head>
 
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,greek' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,greek' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=greek,latin' rel='stylesheet' type='text/css'> -->
 
     <title>Athens Orthoexperts</title>
 
@@ -30,12 +34,23 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Hover Effects
+    https://github.com/IanLunn/Hover/blob/master/README.md#hovercss -->
+
+    <link href="css/hover.css" rel="stylesheet">
+
+   <!--  Animate effects
+    https://github.com/daneden/animate.css -->
+
+    <link href="css/animate.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -45,73 +60,75 @@
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Athens Orthoexperts</a>
+                <a class="navbar-brand animated flipInX" href="index.html"><img src="img/logo_top.png" alt="" width="180px" height="auto"></a>
+                <!-- Add the following line for logo. -->
+                <!-- <img alt="Brand" src="img/logo_top.png"> -->
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="index.html" class="hvr-overline-reveal" >Αρχική</a>
                     </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hvr-overline-reveal" data-toggle="dropdown">Ταυτότητα <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">Προφίλ</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">Βασίλειος Σακελλαρίου</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">Συνεργάτες Ιατροί</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">Εξωτερικές Συνεργασίες</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hvr-overline-reveal" data-toggle="dropdown">Εξειδίκευση<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">Χειρουργική Ισχίου</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">Χειρουργική Γόνατος</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">Αθλητικές Κακώσεις</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">Παρουσίαση Περιπτώσεων</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Video Ανατομίας</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hvr-overline-reveal" data-toggle="dropdown">Δημοσιεύσεις - Νέα<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">Επιστημονικές Δημοσιεύσεις</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">Δημοσιεύσεις στα Media</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">Ειδήσεις - Νέα</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li class="active">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
+                        <a href="contact.html" class="hvr-overline-reveal">Επικοινωνία</a>
                     </li>
                 </ul>
             </div>
@@ -219,17 +236,58 @@
         <!-- /.row -->
 
         <hr>
+    </div>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2016 Athens Orthoexperts. Powered by csak</p>
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="index.html"><img src="img/logo-bottom.png" alt="" width="200px" height="auto"></a>
+                <p class="footer-links">
+                    <a href="#">Aρχική</a> ·
+                    <a href="#">Ταυτότητα</a> ·
+                    <a href="#">Εξειδίκευση</a> ·
+                    <a href="#">Δημοσιεύσεις - Νέα</a> ·
+                    <!-- <a href="#">Ραντεβού</a> · -->
+                    <a href="#">Επικοινωνία</a>
+                </p>
+                <p class="footer-company-name">Athens Orthoexperts &copy; 2017 - Powered by csak</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="footer-contact">
+                  <p><i class="fa fa-map-marker fa-lg text-danger"></i> Ομήρου 46, Νέα Σμύρνη, 171 21, Αθήνα</p>
+                  <p><i class="fa fa-phone fa-lg text-danger"></i> +30 213 0299117</p>
+                  <p><i class="fa fa-mobile fa-lg text-danger"></i> +30 6944 838101</p>
+                </div>
+                <!-- <div class="footer-powered">
+                  <p><a class="fa fa-envelope text-primary" href="mailto:support@company.com"></a> Powered by csak</p> -->
+                <!-- </div> -->
+            </div>
+            <div class="col-sm-4">
+                <div class="footer-company-about">
+                    <h4>Συνεργασίες</h4>
+                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                    </p>
+                 </div>
+                    <div class="footer-icons">
+                    <span class="fa-stack fa-lg">
+                         <i class="fa fa-circle text-primary fa-stack-2x"></i>
+                         <a href="https://www.facebook.com/boneandjoints"><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                         <i class="fa fa-circle text-primary fa-stack-2x"></i>
+                         <a href="https://twitter.com/bsakellariou"><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
+                    </span>
+                    <span class="fa-stack fa-lg">
+                         <i class="fa fa-circle text-primary fa-stack-2x"></i>
+                         <a href="http://gr.linkedin.com/pub/vasileios-sakellariou/2a/685/b6b"><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a>
+                    </span>
+                    </div>
                 </div>
             </div>
-        </footer>
-
-    </div>
+        </div>
+    </footer>
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -237,6 +295,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Menus Animation JavaScript -->
+    <!-- https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown -->
+    <!-- <script src="js/animenus.js"></script> -->
+
+    <!-- Dropdown hover menu -->
+    <!-- https://codepen.io/bsngr/pen/frDqh -->
+    <script src="js/hovermenus.js"></script>
+
 
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
