@@ -1,4 +1,4 @@
-§/*!
+/*!
  * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -33,10 +33,23 @@ body {
 }
 
 /*Custom Navbar*/
-/*
-.navbar-fixed-top {
-    min-height: 100px;
-}*/
+
+/*Added by csak 13.06.2017*/
+/*https://codepen.io/bootstrapped/pen/KwYGwq*/
+
+.navbar-brand {
+  height: 80px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
 
 /* Home Page Carousel */
 
