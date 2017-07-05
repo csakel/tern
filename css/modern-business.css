@@ -1,0 +1,291 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+* {
+  margin: 0px; padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+
+
+html,
+body {
+    height: 100%;
+}
+
+/*Remove dotted lines in scoll to top in  Firefox*/
+a:active { outline: none; }
+a:focus{ -moz-outline-style: none; }
+
+
+/*Map ID*/
+
+#map { height: 300px }
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/*Custom Navbar*/
+
+/*Added by csak 13.06.2017*/
+/*https://codepen.io/bootstrapped/pen/KwYGwq*/
+/*line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height*/
+
+.navbar-brand {
+  height: 80px;
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+
+/*Added same colour in list item and hvr-reveal menu*/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #428bca;
+    text-decoration: none;
+ /*   background-color: #f5f5f5;*/
+}
+
+/*Added by csak 26.06.2017*/
+/*Create a media query that keeps the line height of the collapsing menu at 20px for screen widths up to 767px*/
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+/* Home Page Carousel */
+
+/*Added by csak 19.02.2016*/
+/*Caption center aligned, Fade in transition effect*/
+
+.carousel-caption {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    /*color: #959595;*/
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*End*/
+
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.pnl_heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DB000F;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    padding: 20px 20px;
+    width: 100%;
+    height: auto;
+    color: #ccc;
+    background-color:#31353a;
+    position: relative;
+}
+
+.footer-links {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 17px;
+  padding-top: 17px;
+  text-align:left;
+}
+
+.footer-company-name{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding-top: 40px;
+  color: #959595;
+  text-align:left;
+}
+
+.footer-contact{
+  font-family: 'Open Sans', sans-serif;
+  font-size: auto;
+  padding-top: 20px;
+  text-align:left;
+}
+
+.footer-powered{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  padding-top: 100px;
+  text-align:left;
+}
+
+.footer-company-about{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  /*padding-top: 10px;*/
+  text-align:left;
+}
+
+.footer-icons {
+  padding-top: 50px;
+  text-align:left;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+    /*footer{
+    height: 70%;
+    }*/
+}
+
+/* Return to top transition */
+
+#return-to-top {
+    position: fixed;
+    bottom: 250px;
+    right: 20px;
+    /*background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);*/
+
+    background: rgb(48, 99, 150);
+    background: rgba(48, 99, 150, 1);
+
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    /*background: rgba(0, 0, 0, 0.9);*/
+    background: rgba(48, 99, 150, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
