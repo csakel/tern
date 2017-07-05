@@ -17,6 +17,7 @@ body {
     height: 100%;
 }
 
+/*Remove dotted lines in scoll to top in  Firefox*/
 a:active { outline: none; }
 a:focus{ -moz-outline-style: none; }
 
@@ -41,6 +42,7 @@ body {
 
 /*Added by csak 13.06.2017*/
 /*https://codepen.io/bootstrapped/pen/KwYGwq*/
+/*line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height*/
 
 .navbar-brand {
   height: 80px;
@@ -54,6 +56,24 @@ body {
 .navbar-toggle {
   padding: 10px;
   margin: 25px 15px 25px 0;
+}
+
+
+/*Added same colour in list item and hvr-reveal menu*/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #428bca;
+    text-decoration: none;
+ /*   background-color: #f5f5f5;*/
+}
+
+/*Added by csak 26.06.2017*/
+/*Create a media query that keeps the line height of the collapsing menu at 20px for screen widths up to 767px*/
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
 }
 
 /* Home Page Carousel */
@@ -110,6 +130,11 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.pnl_heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DB000F;
 }
 
 /* 404 Page Styles */
@@ -217,8 +242,12 @@ footer {
     position: fixed;
     bottom: 250px;
     right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+    /*background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);*/
+
+    background: rgb(48, 99, 150);
+    background: rgba(48, 99, 150, 1);
+
     width: 50px;
     height: 50px;
     display: block;
@@ -237,8 +266,7 @@ footer {
 }
 
 #return-to-top i {
-    /*color: #fff;*/
-    color: #FFF;
+    color: #fff;
     margin: 0;
     position: relative;
     left: 16px;
@@ -252,12 +280,12 @@ footer {
 }
 
 #return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
+    /*background: rgba(0, 0, 0, 0.9);*/
+    background: rgba(48, 99, 150, 0.9);
 }
 
 #return-to-top:hover i {
-    /*color: #fff;*/
-    color: #FFF;
+    color: #fff;
     top: 5px;
 }
 
